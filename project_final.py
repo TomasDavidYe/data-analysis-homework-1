@@ -118,10 +118,14 @@ def get_column_names_from_indices(indices):
         result.append(all_column_names[index])
     return result
 
+# 0 1 2 3 6 7 8 10
 
 all_column_names = list(trainX.columns.values)
-chosen_column_names = get_column_names_from_indices([0, 1, 2, 3, 6, 7, 8, 10])
-column_names_for_log_transformation = get_column_names_from_indices([2, 3])
+chosen_column_names = get_column_names_from_indices([0, 1, 2, 3, 6, 7])
+column_names_for_log_transformation = get_column_names_from_indices([1, 6, 7, 8, 10])
+for column_name in column_names_for_log_transformation:
+    trainX[column_name] = trainX[column_name].apply(lambda x: math.log2(x + 1))
+    testX[column_name] = testX[column_name].apply(lambda x: math.log2(x + 1))
 
 trainX = trainX[chosen_column_names]
 testX = testX[chosen_column_names]
