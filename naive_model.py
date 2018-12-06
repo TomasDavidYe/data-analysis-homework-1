@@ -2,18 +2,19 @@ import pandas
 from helper_methods import *
 import statsmodels.api as sm
 
-[development_data, evaluation_data] = getData()
 testing_errors = []
 training_errors = []
-
 num_of_iterations = 500
+
+
+[development_data, evaluation_data] = getData()
+development_data = naive_transformation(development_data)
+
 for i in range(0, num_of_iterations):
     print('Iteration ', i)
 
     # Splitting the development data randomly 80-20
     [trainX, trainY, testX, testY] = split_development_data(development_data)
-    trainX = naive_transformation(trainX)
-    testX = naive_transformation(testX)
     naive_model = sm.OLS(exog=trainX, endog=trainY).fit()
 
     training_predictions = naive_model.predict(trainX)

@@ -1,6 +1,5 @@
 import pandas
 from helper_methods import *
-import matplotlib.pyplot as plt
 import statsmodels.api as sm
 import math
 
@@ -18,6 +17,8 @@ evaluation_data = label_categorical_features(evaluation_data, categorical_featur
 # Part 2: Training a naive model
 evaluation_data.drop(columns=['Id'], inplace=True)
 development_data.drop(columns=['Id'], inplace=True)
+
+[development_data, evaluation_data] = getData()
 
 dropped_column_names = ['Street', 'Utilities', 'GarageCond', 'Heating']
 for name in dropped_column_names:
