@@ -51,7 +51,7 @@ print()
 
 # Calculating training error
 training_predictions = naive_model.predict(trainX)
-training_error = mean_square_error(y_pred=training_predictions, y_true=trainY)
+training_error = root_mean_square_error(y_pred=training_predictions, y_true=trainY)
 print("Training error of Naive model = ", training_error)  # The error is ~1000 with small variance
 
 
@@ -65,7 +65,7 @@ print("Training error of Naive model = ", training_error)  # The error is ~1000 
 
 # Calculating testing error
 testing_predictions = naive_model.predict(testX)
-testing_error = mean_square_error(y_pred=testing_predictions, y_true=testY)
+testing_error = root_mean_square_error(y_pred=testing_predictions, y_true=testY)
 print(" Testing error of Naive model = ", testing_error)  # The error is ~2000 with big variance (Depending on the splitting)
 
 # Let us try to find a more consistent model
@@ -186,7 +186,7 @@ print(new_model.summary())
 
 # Calculating training error
 training_predictions = new_model.predict(trainX)
-training_error = mean_square_error(training_predictions, trainY)
+training_error = root_mean_square_error(training_predictions, trainY)
 print("Training error of New model = ", training_error)
 
 
@@ -211,7 +211,7 @@ def plot(i):
 
 # Calculating testing error
 testing_predictions = new_model.predict(testX)
-testing_error = mean_square_error(testing_predictions, testY)
+testing_error = root_mean_square_error(testing_predictions, testY)
 print(" Testing error of New model = ", testing_error)
 
 #

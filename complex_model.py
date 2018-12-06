@@ -115,9 +115,9 @@ for i in range(0, num_of_iterations):
         print(new_model.summary())
 
     training_predictions = new_model.predict(trainX)
-    training_error = mean_square_error(training_predictions, trainY)
+    training_error = root_mean_square_error(training_predictions, trainY)
     testing_predictions = new_model.predict(testX)
-    testing_error = mean_square_error(testing_predictions, testY)
+    testing_error = root_mean_square_error(testing_predictions, testY)
     testing_errors.append(testing_error)
 
 
