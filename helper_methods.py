@@ -33,9 +33,6 @@ def split_development_data(development_data):
     testY = testing_set['SalePrice']
     return [trainX, trainY, testX, testY]
 
-def naive_transformation(data):
-    return data
-
 
 def label_categorical_features(data_set, column_names):
     return pd.get_dummies(data=data_set, prefix=column_names)
@@ -46,4 +43,13 @@ def root_mean_square_error(y_pred, y_true):
         raise Exception('Vectors do not have the same type')
     diff = y_pred - y_true
     return math.sqrt(diff.T.dot(diff)/len(diff))
+
+
+def naive_transformation_of_features(data):
+    return data
+
+
+def final_transformation_of_features(data):
+    return data
+
 

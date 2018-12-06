@@ -46,7 +46,7 @@ def get_column_names_from_indices(indices):
     return result
 
 
-num_of_iterations = 500
+num_of_iterations = 50
 
 for i in range(0, num_of_iterations):
     print('Iteration ', i)
