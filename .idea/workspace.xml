@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77e80f33-2a68-428e-84f9-fa1bdf9cb108" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/naive_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helper_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/helper_methods.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_final.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_final.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,27 +28,27 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="2" />
-          <entry key="py" value="18" />
+          <entry key="py" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSV" value="2" />
-          <entry key="Python" value="18" />
+          <entry key="Python" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="295" />
           <entry key="dummy" value="73" />
-          <entry key="py" value="9271" />
+          <entry key="py" value="9850" />
           <entry key="txt" value="65" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="138" />
-          <entry key="Python" value="9566" />
+          <entry key="Python" value="10145" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -59,24 +62,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helper_methods.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="12" column="36" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="36" />
+            <state relative-caret-position="165">
+              <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
               <folding>
-                <marker date="1544087448249" expanded="true" signature="306:470" ph="..." />
+                <marker date="1544091516422" expanded="true" signature="306:481" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project_final.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="121" lean-forward="true" selection-start-line="121" selection-end-line="121" />
+            <state>
+              <caret selection-end-line="31" selection-end-column="61" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <marker date="1544090660554" expanded="true" signature="2558:2757" ph="..." />
-                <marker date="1544090660554" expanded="true" signature="4703:4834" ph="..." />
+                <marker date="1544091818158" expanded="true" signature="2558:2757" ph="..." />
+                <marker date="1544091818158" expanded="true" signature="4703:4814" ph="..." />
               </folding>
             </state>
           </provider>
@@ -87,6 +90,30 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
               <caret line="29" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/naive_model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/better_model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="102" column="33" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
+              <folding>
+                <element signature="e#2#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,9 +143,11 @@
         <option value="$PROJECT_DIR$/home-project.py" />
         <option value="$PROJECT_DIR$/helper-methods.py" />
         <option value="$PROJECT_DIR$/project-final.py" />
-        <option value="$PROJECT_DIR$/helper_methods.py" />
         <option value="$PROJECT_DIR$/garbage_script.py" />
+        <option value="$PROJECT_DIR$/helper_methods.py" />
         <option value="$PROJECT_DIR$/project_final.py" />
+        <option value="$PROJECT_DIR$/naive_model.py" />
+        <option value="$PROJECT_DIR$/better_model.py" />
       </list>
     </option>
   </component>
@@ -162,7 +191,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.project_final">
+  <component name="RunManager" selected="Python.better_model">
+    <configuration name="better_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DataAnalysisProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/better_model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="helper_methods" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DataAnalysisProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -205,7 +255,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="program" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="naive_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DataAnalysisProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -217,7 +267,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practise-project.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/naive_model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -248,17 +298,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.program" />
       <item itemvalue="Python.home-project" />
       <item itemvalue="Python.project_final" />
       <item itemvalue="Python.helper_methods" />
+      <item itemvalue="Python.naive_model" />
+      <item itemvalue="Python.better_model" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.better_model" />
+        <item itemvalue="Python.naive_model" />
         <item itemvalue="Python.project_final" />
         <item itemvalue="Python.helper_methods" />
         <item itemvalue="Python.home-project" />
-        <item itemvalue="Python.program" />
       </list>
     </recent_temporary>
   </component>
@@ -343,10 +395,10 @@
     <entry file="file://$PROJECT_DIR$/home_project.py" />
     <entry file="file://$PROJECT_DIR$/helper_methods.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="36" />
+        <state relative-caret-position="165">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
           <folding>
-            <marker date="1544087448249" expanded="true" signature="306:470" ph="..." />
+            <marker date="1544091516422" expanded="true" signature="306:481" ph="..." />
           </folding>
         </state>
       </provider>
@@ -360,12 +412,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project_final.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="121" lean-forward="true" selection-start-line="121" selection-end-line="121" />
+        <state>
+          <caret selection-end-line="31" selection-end-column="61" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1544090660554" expanded="true" signature="2558:2757" ph="..." />
-            <marker date="1544090660554" expanded="true" signature="4703:4834" ph="..." />
+            <marker date="1544091818158" expanded="true" signature="2558:2757" ph="..." />
+            <marker date="1544091818158" expanded="true" signature="4703:4814" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/naive_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/better_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="102" column="33" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
+          <folding>
+            <element signature="e#2#15#0" expanded="true" />
           </folding>
         </state>
       </provider>

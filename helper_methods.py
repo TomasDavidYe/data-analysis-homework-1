@@ -14,7 +14,7 @@ def mean_square_error(y_pred, y_true):
     if len(y_pred) != len(y_true):
         raise Exception('Vectors do not have the same type')
     diff = y_pred - y_true
-    return diff.T.dot(diff)/len(diff)
+    return math.sqrt(diff.T.dot(diff)/len(diff))
 
 
 def show_scatter_graph(data, x, y):

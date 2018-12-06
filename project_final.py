@@ -118,10 +118,9 @@ def get_column_names_from_indices(indices):
         result.append(all_column_names[index])
     return result
 
-# 0 1 2 3 6 7 8 10
 
 all_column_names = list(trainX.columns.values)
-chosen_column_names = get_column_names_from_indices([0, 1, 2, 3, 6, 7])
+chosen_column_names = get_column_names_from_indices([0, 1, 2, 3, 6, 7, 8, 10])
 column_names_for_log_transformation = get_column_names_from_indices([1, 6, 7, 8, 10])
 for column_name in column_names_for_log_transformation:
     trainX[column_name] = trainX[column_name].apply(lambda x: math.log2(x + 1))
@@ -130,17 +129,18 @@ for column_name in column_names_for_log_transformation:
 trainX = trainX[chosen_column_names]
 testX = testX[chosen_column_names]
 
+# 0 1 2 3 6 7 8 10
 
 name_sets_for_given_transformation = {
-    'exp': get_column_names_from_indices([]),
-    'log': get_column_names_from_indices([]),
-    'cube': get_column_names_from_indices([]),
-    'square': get_column_names_from_indices([]),
-    'root': get_column_names_from_indices([])
+    'Exp': get_column_names_from_indices([8]),
+    'Log': get_column_names_from_indices([2]),
+    'Cube': get_column_names_from_indices([]),
+    'Square': get_column_names_from_indices([]),
+    'Root': get_column_names_from_indices([7, 8])
 }
 
 
-transformation_names = ['exp', 'log', 'cube', 'square', 'root']
+transformation_names = ['Exp', 'Log', 'Cube', 'Square', 'Root']
 exp = lambda x: math.exp(x)
 log = lambda x: math.log2(x + 1)
 cube = lambda x: x*x*x
@@ -148,11 +148,11 @@ square = lambda x: x*x
 root = lambda x: math.sqrt(x)
 
 transformations = {
-    'exp': exp,
-    'log': log,
-    'cube': cube,
-    'square': square,
-    'root': root
+    'Exp': exp,
+    'Log': log,
+    'Cube': cube,
+    'Square': square,
+    'Root': root
 }
 
 
@@ -160,6 +160,7 @@ for transformation_name in transformation_names:
     for column_name in name_sets_for_given_transformation[transformation_name]:
         transformation = transformations[transformation_name]
         trainX[column_name + transformation_name] = trainX[column_name].apply(transformation)
+        testX[column_name+transformation_name] = testX[column_name].apply(transformation)
 
 # chosen_column_names_for_squaring = get_column_names_from_indices([])
 # chosen_column_names_for_transformation = get_column_names_from_indices([1, 6, 7])
