@@ -22,5 +22,27 @@ def show_scatter_graph(data, x, y):
     plt.show()
 
 
+def getData():
+    data = pd.read_csv('./project-data.csv')
+    development_data_raw = data[~data['SalePrice'].isnull()]
+    evaluation_data_raw = data[data['SalePrice'].isnull()]
+
+    development_data = development_data_raw.dropna()
+    evaluation_data = evaluation_data_raw.drop(columns=['SalePrice'])
+    evaluation_data.dropna()
+    categorical_feature_names = ['MSZoning', 'Street', 'Utilities', 'BldgType', 'BsmtQual', 'ExterQual', 'ExterCond',
+                                 'Heating', 'GarageCond']
+    development_data = label_categorical_features(development_data, categorical_feature_names)
+    evaluation_data = label_categorical_features(evaluation_data, categorical_feature_names)
+
+    # Part 2: Training a naive model
+    evaluation_data.drop(columns=['Id'], inplace=True)
+    development_data.drop(columns=['Id'], inplace=True)
+    return [development_data, evaluation_data]
+
+
+
+
+
 def show_box_plot(data):
     plt.boxplot(data=data)

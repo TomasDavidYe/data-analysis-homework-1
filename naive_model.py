@@ -2,23 +2,12 @@ import pandas
 from helper_methods import *
 import statsmodels.api as sm
 
-data = pandas.read_csv('./project-data.csv')
-development_data_raw = data[~data['SalePrice'].isnull()]
-evaluation_data_raw = data[data['SalePrice'].isnull()]
+[development_data, evaluation_data] = getData()
+testing_errors = []
+training_errors = []
 
-development_data = development_data_raw.dropna()
-evaluation_data = evaluation_data_raw.drop(columns=['SalePrice'])
-evaluation_data.dropna()
-categorical_feature_names = ['MSZoning', 'Street', 'Utilities', 'BldgType', 'BsmtQual', 'ExterQual', 'ExterCond', 'Heating', 'GarageCond']
-development_data = label_categorical_features(development_data, categorical_feature_names)
-evaluation_data = label_categorical_features(evaluation_data, categorical_feature_names)
-
-# Part 2: Training a naive model
-evaluation_data.drop(columns=['Id'], inplace=True)
-development_data.drop(columns=['Id'], inplace=True)
-test_errors = []
 num_of_iterations = 500
-for i in range(1, num_of_iterations):
+for i in range(0, num_of_iterations):
     print('Iteration ', i)
     training_set = development_data.sample(frac=0.8)
     testing_set = development_data.drop(index=training_set.index)
@@ -31,11 +20,18 @@ for i in range(1, num_of_iterations):
     testY = testing_set['SalePrice']
 
     naive_model = sm.OLS(exog=trainX, endog=trainY).fit()
+
     training_predictions = naive_model.predict(trainX)
     training_error = mean_square_error(y_pred=training_predictions, y_true=trainY)
+    training_errors.append(training_error)
+
     testing_predictions = naive_model.predict(testX)
     testing_error = mean_square_error(y_pred=testing_predictions, y_true=testY)
+    testing_errors.append(testing_error)
 
-    test_errors.append(testing_error)
+    if i == num_of_iterations - 1:
+        print(naive_model.summary())
 
-print('Avarage testing error of naive model = ', pandas.Series(test_errors).mean())
+
+print('Avarage training error of naive model = ', pandas.Series(training_errors).mean())
+print('Avarage testing error of naive model  = ', pandas.Series(testing_errors).mean())

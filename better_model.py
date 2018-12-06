@@ -45,7 +45,7 @@ def get_column_names_from_indices(indices):
     return result
 
 
-num_of_iterations = 100
+num_of_iterations = 500
 
 for i in range(0, num_of_iterations):
     print('Iteration ', i)
@@ -60,6 +60,7 @@ for i in range(0, num_of_iterations):
 
     all_column_names = list(trainX.columns.values)
     chosen_column_names = get_column_names_from_indices([0, 1, 2, 3, 6, 7, 8, 10])
+    chosen_column_names
     column_names_for_log_transformation = get_column_names_from_indices([1, 6, 7, 8, 10])
     for column_name in column_names_for_log_transformation:
         trainX[column_name] = trainX[column_name].apply(lambda x: math.log2(x + 1))
@@ -71,12 +72,22 @@ for i in range(0, num_of_iterations):
     # 0 1 2 3 6 7 8 10
 
     name_sets_for_given_transformation = {
-        'Exp': get_column_names_from_indices([8]),
+        'Exp': get_column_names_from_indices([]),
         'Log': get_column_names_from_indices([2]),
         'Cube': get_column_names_from_indices([]),
-        'Square': get_column_names_from_indices([1,2,3,6,7,8]),
-        'Root': get_column_names_from_indices([ 7, 8])
+        'Square': get_column_names_from_indices([]),
+        'Root': get_column_names_from_indices([7, 8])
     }
+
+    mixed_column_number_pairs = [[3,2], [1,3]]
+
+    for number_pair in mixed_column_number_pairs:
+        pair = get_column_names_from_indices(number_pair)
+        column_name0 = pair[0]
+        column_name1 = pair[1]
+        trainX[column_name0 + 'Times' + column_name1] = trainX[column_name0]*trainX[column_name1]
+        testX[column_name0 + 'Times' + column_name1] = testX[column_name0]*testX[column_name1]
+
 
     transformation_names = ['Exp', 'Log', 'Cube', 'Square', 'Root']
     exp = lambda x: math.exp(x)
