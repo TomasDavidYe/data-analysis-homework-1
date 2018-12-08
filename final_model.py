@@ -4,8 +4,7 @@ import statsmodels.api as sm
 
 testing_errors = []
 training_errors = []
-num_of_iterations = 500
-
+num_of_iterations = 1000
 
 [development_data, evaluation_data] = getData()
 development_data = final_transformation_of_features(development_data)

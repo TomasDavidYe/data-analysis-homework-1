@@ -46,7 +46,7 @@ def get_column_names_from_indices(indices):
     return result
 
 
-num_of_iterations = 50
+num_of_iterations = 500
 
 for i in range(0, num_of_iterations):
     print('Iteration ', i)
@@ -76,9 +76,11 @@ for i in range(0, num_of_iterations):
         'Exp': get_column_names_from_indices([]),
         'Log': get_column_names_from_indices([2]),
         'Cube': get_column_names_from_indices([]),
-        'Square': get_column_names_from_indices([]),
+        'Square': get_column_names_from_indices([1,2,3,6,7,8]),
         'Root': get_column_names_from_indices([7, 8])
     }
+
+
 
     mixed_column_number_pairs = [[3,2], [1,3]]
 
@@ -125,3 +127,8 @@ for i in range(0, num_of_iterations):
 print()
 print()
 print("Average error of new model = ", pandas.Series(testing_errors).mean())
+
+print(new_model.summary())
+indices = [0, 1, 2, 3, 6, 7, 8, 10]
+for i in indices:
+    print("index = ", i, ' name = ', all_column_names[i])

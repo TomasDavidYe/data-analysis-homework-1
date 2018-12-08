@@ -26,10 +26,8 @@ def split_development_data(development_data):
     training_set = development_data.sample(frac=0.8)
     testing_set = development_data.drop(index=training_set.index)
     trainX = training_set.drop(columns=['SalePrice'])
-    trainX = sm.add_constant(data=trainX, has_constant='add')
     trainY = training_set['SalePrice']
     testX = testing_set.drop(columns=['SalePrice'])
-    testX = sm.add_constant(data=testX, has_constant='add')
     testY = testing_set['SalePrice']
     return [trainX, trainY, testX, testY]
 
@@ -46,10 +44,50 @@ def root_mean_square_error(y_pred, y_true):
 
 
 def naive_transformation_of_features(data):
-    return data
+    return sm.add_constant(data, has_constant='add')
 
 
-def final_transformation_of_features(data):
-    return data
+def final_transformation_of_features(data: pd.DataFrame) -> pd.DataFrame:
+    final_selected_column_names = ['LotArea', 'OverallQual', 'OverallCond', '1stFlrSF', '2ndFlrSF', 'GarageCars', 'ExterQual_TA']
+    all_column_names = list(data.columns.values)
+    dropable_column_names = difference_between_lists(original=all_column_names, removed=final_selected_column_names)
+
+    if 'SalePrice' in dropable_column_names:
+        dropable_column_names.remove('SalePrice')
+    data.drop(columns=dropable_column_names, inplace=True)
+    data = transform_data(data)
+    return sm.add_constant(data)
 
 
+def transform_data(data: pd.DataFrame) -> pd.DataFrame:
+    result: pd.DataFrame = data.copy()
+
+    column_names_for_log_transformation = ['LotArea', '1stFlrSF', '2ndFlrSF', 'GarageCars']
+    column_names_for_adding_log_transformation = ['OverallQual']
+    log = lambda x: math.log2(x + 1)
+    for column_name in column_names_for_log_transformation:
+        result[column_name] = result[column_name].apply(log)
+
+    for column_name in column_names_for_adding_log_transformation:
+        result[column_name + 'Log'] = result[column_name].apply(log)
+
+    column_names_for_adding_quadratic_transformation = ['LotArea', 'OverallQual', 'OverallCond', '1stFlrSF', '2ndFlrSF', 'GarageCars']
+    square = lambda x: x*x
+    for column_name in column_names_for_adding_quadratic_transformation:
+        result[column_name + 'Quad'] = result[column_name].apply(square)
+
+    column_names_for_adding_root_transformation =['2ndFlrSF', 'GarageCars']
+    root = lambda x: math.sqrt(x)
+    for column_name in column_names_for_adding_root_transformation:
+        result[column_name + 'Root'] = result[column_name].apply(root)
+
+    pairs_of_column_names_for_adding_product_features = [['OverallQual', 'OverallCond'], ['LotArea', 'OverallCond']]
+    for name_pair in pairs_of_column_names_for_adding_product_features:
+        column_name_0 = name_pair[0]
+        column_name_1 = name_pair[1]
+        result[column_name_0 + 'Times' + column_name_1] = result[column_name_0] * result[column_name_1]
+
+    return result
+
+def difference_between_lists(original, removed):
+    return list(set(original) - set(removed))
