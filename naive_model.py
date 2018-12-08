@@ -6,7 +6,6 @@ testing_errors = []
 training_errors = []
 num_of_iterations = 1000
 
-
 [development_data, evaluation_data] = get_data()
 development_data = naive_transformation_of_features(development_data)
 

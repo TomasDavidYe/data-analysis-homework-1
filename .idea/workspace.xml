@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="77e80f33-2a68-428e-84f9-fa1bdf9cb108" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complex_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/complex_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/helper_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/helper_methods.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/naive_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/naive_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/resources/project-data.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,32 +30,35 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="3" />
+          <entry key="csv" value="6" />
+          <entry key="gitignore" value="1" />
           <entry key="md" value="1" />
-          <entry key="py" value="21" />
+          <entry key="py" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSV" value="3" />
+          <entry key="CSV" value="6" />
           <entry key="Markdown" value="1" />
-          <entry key="Python" value="21" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="295" />
           <entry key="dummy" value="90" />
+          <entry key="gitignore" value="12" />
           <entry key="md" value="46" />
-          <entry key="py" value="14589" />
+          <entry key="py" value="15431" />
           <entry key="txt" value="65" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="46" />
-          <entry key="PLAIN_TEXT" value="155" />
-          <entry key="Python" value="14884" />
+          <entry key="PLAIN_TEXT" value="167" />
+          <entry key="Python" value="15726" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -66,31 +69,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helper_methods.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="812">
+              <caret line="55" column="44" lean-forward="true" selection-start-line="55" selection-start-column="44" selection-end-line="55" selection-end-column="44" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <marker date="1544264462204" expanded="true" signature="2341:2342" ph="..." />
-                <marker date="1544264462204" expanded="true" signature="3718:5199" ph="..." />
-                <marker date="1544264462204" expanded="true" signature="4218:4281" ph="..." />
-                <marker date="1544264462204" expanded="true" signature="5198:5199" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project_final.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="121" column="46" lean-forward="true" selection-start-line="121" selection-start-column="46" selection-end-line="121" selection-end-column="46" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-                <marker date="1544096581234" expanded="true" signature="2568:2767" ph="..." />
-                <marker date="1544096581234" expanded="true" signature="4713:4824" ph="..." />
+                <marker date="1544265568250" expanded="true" signature="2445:2446" ph="..." />
+                <marker date="1544265568250" expanded="true" signature="3822:5304" ph="..." />
+                <marker date="1544265568250" expanded="true" signature="4322:4386" ph="..." />
+                <marker date="1544265568250" expanded="true" signature="5303:5304" ph="..." />
               </folding>
             </state>
           </provider>
@@ -99,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/naive_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+            <state relative-caret-position="122">
+              <caret line="16" column="57" lean-forward="true" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -108,20 +97,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project-data.csv">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/naive_predictions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+            <state relative-caret-position="195">
+              <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/complex_model.py">
+        <entry file="file://$PROJECT_DIR$/final_predictions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-187">
-              <caret line="84" column="4" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="4" />
+            <state relative-caret-position="195">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,8 +124,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/final_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="90">
+              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -143,7 +138,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="30">
-                <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+                <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
               </first_editor>
               <second_editor />
             </state>
@@ -180,10 +175,14 @@
         <option value="$PROJECT_DIR$/project_final.py" />
         <option value="$PROJECT_DIR$/better_model.py" />
         <option value="$PROJECT_DIR$/complex_model.py" />
-        <option value="$PROJECT_DIR$/naive_model.py" />
-        <option value="$PROJECT_DIR$/final_model.py" />
-        <option value="$PROJECT_DIR$/helper_methods.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/final_model.py" />
+        <option value="$PROJECT_DIR$/naive_model.py" />
+        <option value="$PROJECT_DIR$/helper_methods.py" />
+        <option value="$PROJECT_DIR$/predictions.py" />
+        <option value="$PROJECT_DIR$/naive_predictions.py" />
+        <option value="$PROJECT_DIR$/final_predictions.py" />
       </list>
     </option>
   </component>
@@ -205,6 +204,11 @@
             <path>
               <item name="DataAnalysisProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataAnalysisProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataAnalysisProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataAnalysisProject" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -228,7 +232,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.final_model">
+  <component name="RunManager" selected="Python.naive_predictions">
     <configuration name="better_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DataAnalysisProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -271,7 +275,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="helper_methods" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="final_predictions" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DataAnalysisProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -283,7 +287,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/helper_methods.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/final_predictions.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -313,7 +317,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="project_final" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="naive_predictions" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DataAnalysisProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -325,7 +329,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project_final.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/naive_predictions.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -335,19 +339,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.project_final" />
-      <item itemvalue="Python.helper_methods" />
       <item itemvalue="Python.naive_model" />
       <item itemvalue="Python.better_model" />
       <item itemvalue="Python.final_model" />
+      <item itemvalue="Python.naive_predictions" />
+      <item itemvalue="Python.final_predictions" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.naive_predictions" />
+        <item itemvalue="Python.final_predictions" />
         <item itemvalue="Python.final_model" />
         <item itemvalue="Python.naive_model" />
         <item itemvalue="Python.better_model" />
-        <item itemvalue="Python.project_final" />
-        <item itemvalue="Python.helper_methods" />
       </list>
     </recent_temporary>
   </component>
@@ -377,12 +381,12 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4959217" visible="true" weight="0.18604651" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4959217" visible="true" weight="0.18604651" />
       <window_info id="Structure" order="1" sideWeight="0.50089765" side_tool="true" weight="0.24947146" />
       <window_info id="Favorites" order="2" sideWeight="0.5040783" side_tool="true" weight="0.18604651" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32650602" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7357294" weight="0.5301205" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7357294" visible="true" weight="0.5301205" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -390,7 +394,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32907802" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.2614458" />
       <window_info anchor="bottom" x="533" y="313" width="374" height="273" id="Event Log" order="9" sideWeight="0.2642706" side_tool="true" type="FLOATING" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="10" sideWeight="0.8217054" visible="true" weight="0.35783133" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.8217054" weight="0.35783133" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -453,18 +457,6 @@
           <caret line="121" column="46" lean-forward="true" selection-start-line="121" selection-start-column="46" selection-end-line="121" selection-end-column="46" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1544096581234" expanded="true" signature="2568:2767" ph="..." />
-            <marker date="1544096581234" expanded="true" signature="4713:4824" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/final_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -473,32 +465,85 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="30">
-            <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/naive_model.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        <state relative-caret-position="30">
+          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/final_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/predictions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/naive_predictions.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/final_predictions.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/helper_methods.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="812">
+          <caret line="55" column="44" lean-forward="true" selection-start-line="55" selection-start-column="44" selection-end-line="55" selection-end-column="44" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <marker date="1544264462204" expanded="true" signature="2341:2342" ph="..." />
-            <marker date="1544264462204" expanded="true" signature="3718:5199" ph="..." />
-            <marker date="1544264462204" expanded="true" signature="4218:4281" ph="..." />
-            <marker date="1544264462204" expanded="true" signature="5198:5199" ph="..." />
+            <marker date="1544265568250" expanded="true" signature="2445:2446" ph="..." />
+            <marker date="1544265568250" expanded="true" signature="3822:5304" ph="..." />
+            <marker date="1544265568250" expanded="true" signature="4322:4386" ph="..." />
+            <marker date="1544265568250" expanded="true" signature="5303:5304" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/naive_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="16" column="57" lean-forward="true" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/final_predictions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/naive_predictions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>

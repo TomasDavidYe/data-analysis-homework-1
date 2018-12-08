@@ -4,7 +4,7 @@ import math
 
 
 def get_data():
-    data = pd.read_csv('./project-data.csv')
+    data = pd.read_csv('./resources/project-data.csv')
     development_data_raw = data[~data['SalePrice'].isnull()]
     evaluation_data_raw = data[data['SalePrice'].isnull()]
 
@@ -43,19 +43,21 @@ def root_mean_square_error(y_pred, y_true):
 
 
 def naive_transformation_of_features(data):
-    return sm.add_constant(data, has_constant='add')
+    result = data.copy()
+    return sm.add_constant(result, has_constant='add')
 
 
 def final_transformation_of_features(data: pd.DataFrame) -> pd.DataFrame:
+    result: pd.DataFrame = data.copy()
     final_selected_column_names = ['LotArea', 'OverallQual', 'OverallCond', '1stFlrSF', '2ndFlrSF', 'GarageCars', 'ExterQual_TA']
     all_column_names = list(data.columns.values)
     dropable_column_names = difference_between_lists(original=all_column_names, removed=final_selected_column_names)
 
     if 'SalePrice' in dropable_column_names:
         dropable_column_names.remove('SalePrice')
-    data.drop(columns=dropable_column_names, inplace=True)
-    data = transform_data(data)
-    return sm.add_constant(data)
+    result.drop(columns=dropable_column_names, inplace=True)
+    result = transform_data(result)
+    return sm.add_constant(result, has_constant='add')
 
 
 def transform_data(data: pd.DataFrame) -> pd.DataFrame:
