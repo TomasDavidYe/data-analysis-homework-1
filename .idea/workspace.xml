@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77e80f33-2a68-428e-84f9-fa1bdf9cb108" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complex_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/complex_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helper_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/helper_methods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/naive_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/naive_model.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,19 +20,22 @@
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="3" />
+          <entry key="md" value="1" />
           <entry key="py" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSV" value="3" />
+          <entry key="Markdown" value="1" />
           <entry key="Python" value="21" />
         </counts>
       </usages-collector>
@@ -43,12 +43,14 @@
         <counts>
           <entry key="Python Console" value="295" />
           <entry key="dummy" value="83" />
+          <entry key="md" value="40" />
           <entry key="py" value="13023" />
           <entry key="txt" value="65" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="Markdown" value="40" />
           <entry key="PLAIN_TEXT" value="148" />
           <entry key="Python" value="13318" />
         </counts>
@@ -64,11 +66,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helper_methods.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
+            <state relative-caret-position="588">
               <caret line="86" column="36" lean-forward="true" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="36" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <marker date="1544170172529" expanded="true" signature="96:3950" ph="..." />
                 <marker date="1544170172529" expanded="true" signature="3854:3855" ph="..." />
               </folding>
             </state>
@@ -78,7 +79,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project_final.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
+            <state relative-caret-position="1575">
               <caret line="110" column="32" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="32" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -89,7 +90,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/naive_model.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
@@ -113,7 +114,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/complex_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="715">
+            <state relative-caret-position="1215">
               <caret line="84" column="4" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="4" />
             </state>
           </provider>
@@ -127,6 +128,18 @@
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="30">
+                <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -164,6 +177,7 @@
         <option value="$PROJECT_DIR$/naive_model.py" />
         <option value="$PROJECT_DIR$/final_model.py" />
         <option value="$PROJECT_DIR$/helper_methods.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -179,7 +193,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,6 +204,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -354,11 +368,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-227" y="-1080" width="1920" height="1080" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4981203" visible="true" weight="0.1864139" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4959217" visible="true" weight="0.18604651" />
       <window_info id="Structure" order="1" sideWeight="0.50089765" side_tool="true" weight="0.24947146" />
-      <window_info id="Favorites" order="2" sideWeight="0.5018797" side_tool="true" weight="0.24947146" />
+      <window_info id="Favorites" order="2" sideWeight="0.5040783" side_tool="true" weight="0.18604651" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32765958" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7357294" weight="0.32673267" />
@@ -367,7 +382,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32907802" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.26237625" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2614458" />
       <window_info anchor="bottom" x="533" y="313" width="374" height="273" id="Event Log" order="9" sideWeight="0.2642706" side_tool="true" type="FLOATING" weight="0.32891566" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.8217054" weight="0.35841584" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -412,10 +427,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/home_project.py" />
     <entry file="file://$PROJECT_DIR$/garbage_script.py" />
-    <entry file="file://$PROJECT_DIR$/complex_model.py">
+    <entry file="file://$PROJECT_DIR$/project_final.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="84" column="4" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="4" />
+        <state relative-caret-position="1575">
+          <caret line="110" column="32" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1544096581234" expanded="true" signature="2568:2767" ph="..." />
+            <marker date="1544096581234" expanded="true" signature="4713:4824" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -426,25 +446,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project_final.py">
+    <entry file="file://$PROJECT_DIR$/complex_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="110" column="32" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="32" />
+        <state relative-caret-position="1215">
+          <caret line="84" column="4" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/naive_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1544096581234" expanded="true" signature="2568:2767" ph="..." />
-            <marker date="1544096581234" expanded="true" signature="4713:4824" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/helper_methods.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
+        <state relative-caret-position="588">
           <caret line="86" column="36" lean-forward="true" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="36" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <marker date="1544170172529" expanded="true" signature="96:3950" ph="..." />
             <marker date="1544170172529" expanded="true" signature="3854:3855" ph="..." />
           </folding>
         </state>
@@ -460,13 +484,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/naive_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
