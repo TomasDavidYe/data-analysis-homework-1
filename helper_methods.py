@@ -34,7 +34,7 @@ def split_development_data(development_data):
 def label_categorical_features(data_set, column_names):
     return pd.get_dummies(data=data_set, prefix=column_names)
 
-
+# RMSE
 def root_mean_square_error(y_pred, y_true):
     if len(y_pred) != len(y_true):
         raise Exception('Vectors do not have the same type')
@@ -42,11 +42,13 @@ def root_mean_square_error(y_pred, y_true):
     return math.sqrt(diff.T.dot(diff)/len(diff))
 
 
-def error(y_pred, y_true):
+# MAE
+def mean_absolute_error(y_pred, y_true):
     if len(y_pred) != len(y_true):
         raise Exception('Vectors do not have the same type')
     diff = (y_pred - y_true).apply(lambda x: math.fabs(x))
     return diff.mean()
+
 
 def naive_transformation_of_features(data):
     result = data.copy()
@@ -117,7 +119,12 @@ def get_column_names_for_log_transformation():
 
 
 def get_pairs_of_column_names_for_adding_product():
-    return [['OverallQual', 'OverallCond'], ['LotArea', 'OverallCond']]
+    column_names = ['LotArea', 'OverallQual', 'OverallCond', '1stFlrSF', '2ndFlrSF', 'GarageCars']
+    pairs = []
+    for i in range(0,6):
+        for j in range(i + 1, 6):
+            pairs.append([column_names[i], column_names[j]])
+    return pairs
 
 
 def get_transformation_name_to_transformation_dictionary():

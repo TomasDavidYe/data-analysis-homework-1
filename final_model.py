@@ -21,13 +21,13 @@ for i in range(0, num_of_iterations):
     training_predictions = final_model.predict(trainX)
     training_cost = root_mean_square_error(y_pred=training_predictions, y_true=trainY)
     training_costs.append(training_cost)
-    training_error = error(y_pred=training_predictions, y_true=trainY)
+    training_error = mean_absolute_error(y_pred=training_predictions, y_true=trainY)
     training_errors.append(training_error)
 
     testing_predictions = final_model.predict(testX)
     testing_cost = root_mean_square_error(y_pred=testing_predictions, y_true=testY)
     testing_costs.append(testing_cost)
-    testing_error = error(y_pred=testing_predictions, y_true=testY)
+    testing_error = mean_absolute_error(y_pred=testing_predictions, y_true=testY)
     testing_errors.append(testing_error)
 
     if i == num_of_iterations - 1:
