@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77e80f33-2a68-428e-84f9-fa1bdf9cb108" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/data_description.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helper_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/helper_methods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/naive_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/naive_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/final_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/final_predictions.csv" afterDir="false" />
-    </list>
+    <list default="true" id="77e80f33-2a68-428e-84f9-fa1bdf9cb108" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/helper_methods.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1076">
-              <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+            <state relative-caret-position="393">
+              <caret line="133" column="12" lean-forward="true" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="12" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
                 <marker date="1544280534233" expanded="true" signature="1713:1894" ph="..." />
@@ -436,13 +428,13 @@
       <window_info id="Favorites" order="2" sideWeight="0.5040783" side_tool="true" weight="0.18604651" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32650602" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7357294" visible="true" weight="0.5301205" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7357294" weight="0.5301205" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32907802" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2614458" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2614458" />
       <window_info anchor="bottom" x="533" y="313" width="374" height="273" id="Event Log" order="9" sideWeight="0.2642706" side_tool="true" type="FLOATING" weight="0.32891566" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.8217054" weight="0.35783133" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -615,8 +607,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/helper_methods.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1076">
-          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+        <state relative-caret-position="393">
+          <caret line="133" column="12" lean-forward="true" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="12" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
             <marker date="1544280534233" expanded="true" signature="1713:1894" ph="..." />
