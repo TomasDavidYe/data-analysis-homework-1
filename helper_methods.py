@@ -42,6 +42,12 @@ def root_mean_square_error(y_pred, y_true):
     return math.sqrt(diff.T.dot(diff)/len(diff))
 
 
+def error(y_pred, y_true):
+    if len(y_pred) != len(y_true):
+        raise Exception('Vectors do not have the same type')
+    diff = (y_pred - y_true).apply(lambda x: math.fabs(x))
+    return diff.mean()
+
 def naive_transformation_of_features(data):
     result = data.copy()
     return sm.add_constant(result, has_constant='add')
